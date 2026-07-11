@@ -27,9 +27,10 @@ function ParticlesCanvas() {
 
       particles: {
         number: {
-          value: 95,
+          value: 170,
           density: {
             enable: true,
+            area: 1200,
           },
         },
 
@@ -40,15 +41,17 @@ function ParticlesCanvas() {
         links: {
           enable: true,
           color: "#3b82f6",
-          distance: 150,
-          opacity: 0.2,
+          distance: 220,
+          opacity: 0.38,
           width: 1,
         },
 
         move: {
           enable: true,
-          speed: 0.9,
+          speed: 0.65,
           direction: "none",
+          random: false,
+          straight: false,
           outModes: {
             default: "bounce",
           },
@@ -56,19 +59,19 @@ function ParticlesCanvas() {
 
         opacity: {
           value: {
-            min: 0.25,
-            max: 0.55,
+            min: 0.45,
+            max: 0.85,
           },
           animation: {
             enable: true,
-            speed: 0.6,
+            speed: 0.7,
           },
         },
 
         size: {
           value: {
-            min: 1,
-            max: 3.5,
+            min: 1.3,
+            max: 3.8,
           },
         },
       },
@@ -83,9 +86,9 @@ function ParticlesCanvas() {
 
         modes: {
           grab: {
-            distance: 200,
+            distance: 220,
             links: {
-              opacity: 0.5,
+              opacity: 0.6,
             },
           },
         },
