@@ -103,7 +103,7 @@ export default function ProjectCard({ project, isHovered, isDimmed, onHoverStart
       <div className="relative mt-4 flex flex-1 flex-col">
         <p className="flex-1 text-sm leading-7 text-slate-400/90">{project.description}</p>
 
-        <div className="mt-6 flex items-center justify-between border-t border-white/[0.06] pt-4">
+        {/* <div className="mt-6 flex items-center justify-between border-t border-white/[0.06] pt-4">
           <a
             href={project.github}
             target="_blank"
@@ -112,16 +112,29 @@ export default function ProjectCard({ project, isHovered, isDimmed, onHoverStart
           >
             <FaGithub />
             GitHub
-          </a>
+          </a> */}
 
-          <a
+        <div className="mt-6 border-t border-white/[0.06] pt-4">
+          {project.github !== "#" && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noreferrer"
+              className="hover-lift inline-flex items-center gap-2 rounded-full border border-transparent px-3 py-1.5 text-sm text-slate-400 hover:border-white/10 hover:bg-white/5 hover:text-sky-300"
+            >
+              <FaGithub />
+              GitHub
+            </a>
+          )}
+
+          {/* <a
             href={project.live ?? project.github}
             target="_blank"
             rel="noreferrer"
             className="hover-lift flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 hover:border-sky-400/50 hover:bg-sky-400/10 hover:text-sky-300"
           >
             <FaExternalLinkAlt size={12} />
-          </a>
+          </a> */}
         </div>
       </div>
     </motion.div>

@@ -6,17 +6,17 @@ export const projects: ProjectItem[] = [
     title: "ThreadLink – Multi-Threaded TCP Chat System",
     description:
       "Built a multi-threaded TCP chat application supporting 10+ concurrent clients, private/public messaging, dynamic user management, and asynchronous communication using POSIX sockets and select().",
-    github: "#",
+    github: "https://github.com/kumar17aaditya/ThreadLink",
     tech: ["C++", "Linux", "Socket Programming"],
     icon: FaComments,
     accent: "purple",
   },
   {
-    title: "Scalable URL Shortener Service",
+    title: "RetinaSense-AI",
     description:
-      "Built a URL shortening service with custom alias generation and efficient redirection handling, supporting 10,000+ URL mappings. Improved retrieval performance by ~40% using indexing.",
-    github: "#",
-    tech: ["Node.js", "Express.js", "MongoDB"],
+      "Built an end-to-end AI web application for diabetic retinopathy detection using Flask, TensorFlow/Keras, and ResNet50, achieving 81.68% validation accuracy across five retinal disease classes.",
+    github: "https://github.com/kumar17aaditya/RetinaSense-AI",
+    tech: ["Python", "TensorFlow", "OpenCV"],
     icon: FaLink,
     accent: "teal",
   },

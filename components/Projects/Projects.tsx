@@ -16,7 +16,7 @@ export default function Projects() {
         title="Projects"
         accent="cyan"
         rightSlot={
-          <a href="https://github.com/adityakumar171" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-sky-300 hover:text-sky-200">
+          <a href="https://github.com/kumar17aaditya?tab=repositories" target="_blank" rel="noreferrer" className="flex items-center gap-2 text-sm text-sky-300 hover:text-sky-200">
             View All Projects
             <FaArrowRight size={12} />
           </a>
